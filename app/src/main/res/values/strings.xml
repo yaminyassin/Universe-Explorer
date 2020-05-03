@@ -15,6 +15,11 @@
     <string name="save">salvar</string>
     <string name="showSurface">Show Planet Surface</string>
     <string name="colonizePlanet">Colonize Planet</string>
+    <string name="bombText">Bomb planet</string>
+    <string name="invadeText">Invade planet</string>
+    <string name="infectText">Infect planet</string>
+    <string name="laserText">Laser planet</string>
+    <string name="exitText">Exit attack</string>
 
     <string name="menuEdit">Update Planet Data</string>
 </resources>
