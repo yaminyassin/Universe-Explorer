@@ -18,7 +18,7 @@ import java.util.ArrayList;
 
 public class SelectPlanetActivity extends AppCompatActivity {
 
-    private ArrayList<Planet> ColonizedPlanets, freePlanets;
+    private ArrayList<Planet> freePlanets;
     private ArrayList<Integer> planetIndex;
 
     private GridView gridView;
@@ -28,7 +28,6 @@ public class SelectPlanetActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_planet);
-        ColonizedPlanets = new ArrayList<>();
         freePlanets = new ArrayList<>();
 
         Bundle extras = getIntent().getExtras();
