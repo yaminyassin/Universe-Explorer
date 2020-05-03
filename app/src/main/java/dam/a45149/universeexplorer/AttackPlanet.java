@@ -34,10 +34,11 @@ public class AttackPlanet extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
 
         TypedArray arrayPlanets = res.obtainTypedArray(R.array.planets);
+        assert extras != null;
         index = extras.getInt("index");
 
         int idPlanet = arrayPlanets.getResourceId(index, -1);
-        TypedArray planet = res.obtainTypedArray(idPlanet);
+        @SuppressLint("Recycle") TypedArray planet = res.obtainTypedArray(idPlanet);
 
         //valores immutable
         attackTitle.setText( planet.getString(0));
