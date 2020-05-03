@@ -18,7 +18,8 @@
         <LinearLayout
             android:id="@+id/attackLayout1"
             android:layout_width="match_parent"
-            android:layout_height="120dp"
+            android:layout_height="104dp"
+            android:layout_margin="5dp"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -51,33 +52,32 @@
             android:id="@+id/attackLayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center|fill_horizontal"
             android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
             android:layout_marginRight="5dp"
             android:orientation="vertical">
 
             <LinearLayout
                 android:id="@+id/linear1"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <ImageButton
                     android:id="@+id/bombButton"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:background="#00FFFFFF"
                     android:contentDescription="@string/firstPlanet"
                     app:srcCompat="@drawable/attackbomb" />
 
                 <TextView
                     android:id="@+id/bombText"
-                    android:layout_width="0dp"
+                    android:layout_width="300dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
                     android:text="@string/bombText"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
@@ -89,26 +89,23 @@
             <LinearLayout
                 android:id="@+id/linear2"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <ImageButton
                     android:id="@+id/invadeButton"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:background="#00FFFFFF"
                     android:contentDescription="@string/firstPlanet"
                     app:srcCompat="@drawable/attackinvade" />
 
                 <TextView
                     android:id="@+id/invadeText"
-                    android:layout_width="0dp"
+                    android:layout_width="300dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
                     android:text="@string/invadeText"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
@@ -120,26 +117,23 @@
             <LinearLayout
                 android:id="@+id/linear3"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <ImageButton
                     android:id="@+id/infectButton"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:background="#00FFFFFF"
                     android:contentDescription="@string/firstPlanet"
                     app:srcCompat="@drawable/attackvirus2" />
 
                 <TextView
                     android:id="@+id/infectText"
-                    android:layout_width="0dp"
+                    android:layout_width="300dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
                     android:text="@string/infectText"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
@@ -151,26 +145,23 @@
             <LinearLayout
                 android:id="@+id/linear4"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <ImageButton
                     android:id="@+id/laserButton"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:background="#00FFFFFF"
                     android:contentDescription="@string/firstPlanet"
                     app:srcCompat="@drawable/attacklaser" />
 
                 <TextView
                     android:id="@+id/laserText"
-                    android:layout_width="0dp"
+                    android:layout_width="300dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
                     android:text="@string/laserText"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
@@ -182,26 +173,23 @@
             <LinearLayout
                 android:id="@+id/linear5"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <ImageButton
                     android:id="@+id/exitButton"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:background="#00FFFFFF"
                     android:contentDescription="@string/exitText"
                     app:srcCompat="@drawable/attackexit" />
 
                 <TextView
                     android:id="@+id/exitText"
-                    android:layout_width="0dp"
+                    android:layout_width="300dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
                     android:text="@string/exitText"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
@@ -211,6 +199,7 @@
             </LinearLayout>
 
         </LinearLayout>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

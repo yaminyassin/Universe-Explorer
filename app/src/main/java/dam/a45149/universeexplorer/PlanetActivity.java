@@ -106,6 +106,10 @@ public class PlanetActivity extends AppCompatActivity {
         //valores mutable
         int colonies = extras.getInt("colonies");
         int military = extras.getInt("military");
+        finalIntent.putExtra("colonies", colonies);
+        finalIntent.putExtra("military", military);
+        finalIntent.putExtra("forcefield", Boolean.parseBoolean(forcefieldProps.getSelectedItem().toString()));
+
         coloniesProps.setText(Integer.toString(colonies));
         militaryProps.setText(Integer.toString(military));
 
@@ -201,6 +205,20 @@ public class PlanetActivity extends AppCompatActivity {
                     getToast("save First", Toast.LENGTH_SHORT);
                 }else{
                     startActivity(new Intent(this, ShowPanetSurface.class));
+                }
+                return true;
+            case R.id.AttackPlanet:
+                if(editMode){
+                    getToast("save First", Toast.LENGTH_LONG);
+                }else{
+                    Intent attackIntent = new Intent(this, AttackPlanet.class);
+                    attackIntent.putExtra("index", index);
+                    attackIntent.putExtra("colonies", Integer.parseInt(coloniesProps.getText().toString()));
+                    attackIntent.putExtra("military", Integer.parseInt(militaryProps.getText().toString()));
+                    attackIntent.putExtra("forcefield", Boolean.parseBoolean(forcefieldProps.getSelectedItem().toString()));
+                    startActivity(attackIntent);
+
+                    return true;
                 }
             default:
                 return super.onOptionsItemSelected(item);

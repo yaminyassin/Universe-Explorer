@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AttackPlanet"></activity>
+
+        <activity android:name=".AttackPlanet"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".SelectPlanetActivity"
             android:parentActivityName=".MainActivity" />

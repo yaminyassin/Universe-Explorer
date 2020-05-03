@@ -22,4 +22,5 @@
     <string name="exitText">Exit attack</string>
 
     <string name="menuEdit">Update Planet Data</string>
+    <string name="menuAttack">Attack Planet</string>
 </resources>
