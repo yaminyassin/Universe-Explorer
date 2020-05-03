@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="planets">
+        <item>@array/mercury</item>
+        <item>@array/venus</item>
+        <item>@array/earth</item>
+        <item>@array/moon</item>
+        <item>@array/mars</item>
+        <item>@array/jupiter</item>
+        <item>@array/saturn</item>
+        <item>@array/uranus</item>
+        <item>@array/neptune</item>
+        <item>@array/pluto</item>
+    </array>
+
+    <array name="mercury">
+        <item>Mercury</item>
+        <item>0.33</item>
+        <item>3.7</item>
+        <item>@drawable/mercury</item>
+        <item>@drawable/mercuryhd</item>
+
+    </array>
+    <array name="venus">
+        <item>Venus</item>
+        <item>4.87</item>
+        <item>8.9</item>
+        <item>@drawable/venus</item>
+        <item>@drawable/venushd</item>
+    </array>
+    <array name="earth">
+        <item>Earth</item>
+        <item>5.97</item>
+        <item>9.8</item>
+        <item>@drawable/earth</item>
+        <item>@drawable/earthhd</item>
+
+    </array>
+    <array name="moon">
+        <item>Moon</item>
+        <item>0.073</item>
+        <item>1.6</item>
+        <item>@drawable/moon</item>
+        <item>@drawable/moonhd</item>
+    </array>
+    <array name="mars">
+        <item>Mars</item>
+        <item>0.642</item>
+        <item>3.7</item>
+        <item>@drawable/mars</item>
+        <item>@drawable/marshd</item>
+    </array>
+    <array name="jupiter">
+        <item>Jupiter</item>
+        <item>1898</item>
+        <item>23.1</item>
+        <item>@drawable/jupiter</item>
+        <item>@drawable/jupiterhd</item>
+    </array>
+    <array name="saturn">
+        <item>Saturn</item>
+        <item>568</item>
+        <item>9.0</item>
+        <item>@drawable/saturn</item>
+        <item>@drawable/saturnhd</item>
+    </array>
+    <array name="uranus">
+        <item>Uranus</item>
+        <item>86.8</item>
+        <item>8.7</item>
+        <item>@drawable/uranus</item>
+        <item>@drawable/uranushd</item>
+    </array>
+    <array name="neptune">
+        <item>Neptune</item>
+        <item>102</item>
+        <item>11.0</item>
+        <item>@drawable/neptune</item>
+        <item>@drawable/neptunehd</item>
+    </array>
+    <array name="pluto">
+        <item>Pluto</item>
+        <item>0.0146</item>
+        <item>0.7</item>
+        <item>@drawable/pluto</item>
+        <item>@drawable/plutohd</item>
+    </array>
+
+</resources>

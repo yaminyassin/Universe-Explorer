@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Universe Explorer</string>
+    <string name="background">background</string>
+    <string name="planet">planet</string>
+    <string name="tittle">PLANETS</string>
+    <string name="firstPlanet">Mercury</string>
+    <string name="planetTitle">Planet</string>
+    <string name="mass">Mass:</string>
+    <string name="gravity">Gravity:</string>
+    <string name="nColonies">N. of Colonies:</string>
+    <string name="nmBases">N. of Military Bases:</string>
+    <string name="forceField">Force Field:</string>
+    <string name="numberDefault">0</string>
+    <string name="contentDescription">Just an image!</string>
+    <string name="save">salvar</string>
+    <string name="showSurface">Show Planet Surface</string>
+    <string name="colonizePlanet">Colonize Planet</string>
+
+    <string name="menuEdit">Update Planet Data</string>
+</resources>

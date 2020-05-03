@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".PlanetActivity">
+
+
+    <TextView
+        android:id="@+id/planetTitle"
+        android:layout_width="383dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#FFAB00"
+        android:text="@string/planetTitle"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/planetImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/contentDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/planetTitle"
+        app:srcCompat="@drawable/jupiter" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="390dp"
+        android:layout_height="285dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/planetImage">
+
+        <TableRow
+            android:id="@+id/textMass"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+
+            android:layout_margin="5dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/mass"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:background="#D91E88E5"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="@string/mass"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/massProps"
+                android:layout_width="134dp"
+                android:layout_height="match_parent"
+                android:background="#00B8D4"
+                android:gravity="center_vertical"
+                android:hint="@string/planet"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/textGravity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+
+            android:layout_margin="5dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/gravity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:background="#D91E88E5"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="@string/gravity"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/gravityProps"
+                android:layout_width="134dp"
+                android:layout_height="match_parent"
+                android:background="#00B8D4"
+                android:gravity="center_vertical"
+                android:hint="@string/planet"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/textColonies"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+
+            android:layout_margin="5dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/colonies"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:background="#D91E88E5"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="@string/nColonies"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/coloniesProps"
+                android:layout_width="134dp"
+                android:layout_height="match_parent"
+                android:background="#00B8D4"
+                android:enabled="false"
+                android:gravity="center_vertical"
+                android:hint="@string/planet"
+                android:importantForAutofill="no"
+                android:inputType="textShortMessage|text"
+                android:labelFor="@id/colonies"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/textMilitary"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+
+            android:layout_margin="5dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/military"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:background="#D91E88E5"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="@string/nmBases"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/militaryProps"
+                android:layout_width="134dp"
+                android:layout_height="match_parent"
+                android:background="#00B8D4"
+                android:enabled="false"
+                android:gravity="center_vertical"
+                android:hint="@string/planet"
+                android:importantForAutofill="no"
+                android:inputType="textShortMessage"
+                android:labelFor="@id/military"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/textForceField"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+
+            android:layout_margin="5dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/forcefield"
+                android:layout_width="227dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="5dp"
+                android:background="#D91E88E5"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="@string/forceField"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/forcefieldProps"
+                android:layout_width="134dp"
+                android:layout_height="45dp"
+                android:background="#00B8D4"
+                android:enabled="false"
+                android:gravity="center_vertical"
+                android:hint="@string/planet"
+                android:importantForAutofill="no"
+                android:inputType="textShortMessage"
+                android:labelFor="@id/forcefield"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="59dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/save"
+        android:text="@string/save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>
