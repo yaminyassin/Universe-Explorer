@@ -72,7 +72,7 @@
                     android:layout_height="wrap_content"
                     android:background="#00FFFFFF"
                     android:contentDescription="@string/firstPlanet"
-                    app:srcCompat="@drawable/attackbomb" />
+                    app:srcCompat="@drawable/selector_bomb" />
 
                 <TextView
                     android:id="@+id/bombText"
@@ -100,7 +100,7 @@
                     android:layout_height="wrap_content"
                     android:background="#00FFFFFF"
                     android:contentDescription="@string/firstPlanet"
-                    app:srcCompat="@drawable/attackinvade" />
+                    app:srcCompat="@drawable/selector_invade" />
 
                 <TextView
                     android:id="@+id/invadeText"
@@ -128,7 +128,7 @@
                     android:layout_height="wrap_content"
                     android:background="#00FFFFFF"
                     android:contentDescription="@string/firstPlanet"
-                    app:srcCompat="@drawable/attackvirus2" />
+                    app:srcCompat="@drawable/selector_infect" />
 
                 <TextView
                     android:id="@+id/infectText"
@@ -156,7 +156,7 @@
                     android:layout_height="wrap_content"
                     android:background="#00FFFFFF"
                     android:contentDescription="@string/firstPlanet"
-                    app:srcCompat="@drawable/attacklaser" />
+                    app:srcCompat="@drawable/selector_laser" />
 
                 <TextView
                     android:id="@+id/laserText"
