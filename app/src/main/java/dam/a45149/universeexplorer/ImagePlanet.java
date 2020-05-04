@@ -3,11 +3,14 @@ package dam.a45149.universeexplorer;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ImagePlanet extends AppCompatActivity {
     private int index;
@@ -24,8 +27,6 @@ public class ImagePlanet extends AppCompatActivity {
         setScreenPlanetInfo();
     }
 
-
-
     @SuppressLint({"DefaultLocale", "SetTextI18n", "ResourceType"})
     private void setScreenPlanetInfo(){
         Resources res = getResources();
@@ -39,8 +40,23 @@ public class ImagePlanet extends AppCompatActivity {
 
         planetTitle.setText( planet.getString(0));
         planetImg.setImageResource(planet.getResourceId(4, 0));
+    }
 
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                setResult(RESULT_CANCELED);
+                finish();
+                return true;
 
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 
+    @Override
+    public void onBackPressed() {
+        setResult(RESULT_CANCELED);
+        super.onBackPressed();
     }
 }

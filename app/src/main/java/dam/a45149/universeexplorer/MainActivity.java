@@ -154,6 +154,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
     private void callActivity(Planet planet, Class c){
         Intent intent = new Intent(MainActivity.this, c);
         intent.putExtra("index", planet.getIndex());
